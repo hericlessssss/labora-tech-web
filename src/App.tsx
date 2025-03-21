@@ -1,30 +1,64 @@
-import React from 'react';
-import { Code, Palette, Megaphone } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import ServiceDetails from './pages/ServiceDetails';
+import BlogPostPage from './pages/BlogPost';
+import TermsOfUse from './pages/TermsOfUse';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import CookiePolicy from './pages/CookiePolicy';
+import CookieConsent from './components/CookieConsent';
+
+// Scroll to top component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function HomePage() {
+  return (
+    <>
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        <Portfolio />
+        <Blog />
+        <Contact />
+      </main>
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100 flex flex-col items-center justify-center p-4">
-      <div className="text-center max-w-3xl mx-auto">
-        <div className="flex justify-center gap-4 mb-8">
-          <Code className="w-8 h-8 text-purple-600 animate-pulse" />
-          <Palette className="w-8 h-8 text-purple-500 animate-pulse delay-75" />
-          <Megaphone className="w-8 h-8 text-purple-400 animate-pulse delay-150" />
-        </div>
-        
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent mb-4">
-          Em Breve
-        </h1>
-        
-        <div className="w-32 h-1 bg-gradient-to-r from-purple-600 to-purple-400 mx-auto mb-8 rounded-full"></div>
-        
-        <div className="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg border border-purple-100 p-8">
-          <p className="text-xl text-purple-900/70 leading-relaxed">
-            Estamos desenvolvendo uma experiência digital única para transformar sua presença online.
-            
-          </p>
-        </div>
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen bg-base">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/servicos/:serviceId" element={<ServiceDetails />} />
+          <Route path="/blog/:postId" element={<BlogPostPage />} />
+          <Route path="/termos-de-uso" element={<TermsOfUse />} />
+          <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/politica-de-cookies" element={<CookiePolicy />} />
+        </Routes>
+        <Footer />
+        <CookieConsent />
       </div>
-    </div>
+    </Router>
   );
 }
 

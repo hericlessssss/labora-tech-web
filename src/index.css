@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: 106, 27, 154;
+    --secondary-color: 255, 222, 89;
+    --tertiary-color: 45, 51, 115;
+    --neutral-color: 236, 239, 241;
+    --base-color: 33, 33, 33;
+    --swiper-theme-color: #ffffff;
+    --swiper-navigation-size: 24px;
+  }
+
+  html {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-tertiary px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .service-box {
+    @apply bg-white/5 backdrop-blur-sm rounded-xl p-6 shadow-lg border-2 border-transparent hover:border-primary transition-all duration-300;
+  }
+
+  .service-box:hover {
+    @apply transform scale-105 shadow-xl;
+  }
+}
+
+/* Swiper customization */
+.swiper {
+  @apply rounded-lg;
+}
+
+.portfolio-swiper .swiper-button-next,
+.portfolio-swiper .swiper-button-prev {
+  @apply bg-white/20 text-white w-8 h-8 rounded-full !important;
+}
+
+.portfolio-swiper .swiper-button-next:after,
+.portfolio-swiper .swiper-button-prev:after {
+  @apply text-base !important;
+}
+
+.portfolio-swiper .swiper-pagination-bullet {
+  @apply bg-white/50 !important;
+}
+
+.portfolio-swiper .swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}
