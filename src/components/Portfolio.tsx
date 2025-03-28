@@ -19,11 +19,11 @@ const projects: Project[] = [
     title: 'Labora-Budget',
     description: "O 'Labora-Budget' é uma plataforma completa para controle de orçamentos, permitindo o gerenciamento de propostas aprovadas, em andamento e rejeitadas. O sistema possibilita a criação de orçamentos, cadastro de clientes, impressão de contratos para propostas aprovadas e conta com uma lista de tarefas no formato Kanban. Além disso, oferece um extrato mensal detalhado de orçamentos aprovados, facilitando a gestão financeira.",
     images: [
-      '/BUDGET.png',
-      '/BUDGET1.png',
-      '/BUDGET2.png',
-      '/BUDGET3.png',
-      '/BUDGET4.png'
+      '/public/BUDGET.png',
+      '/public/BUDGET1.png',
+      '/public/BUDGET2.png',
+      '/public/BUDGET3.png',
+      '/public/BUDGET4.png'
     ],
     category: 'Website',
     link: 'https://labora-budget.netlify.app/'
@@ -32,10 +32,8 @@ const projects: Project[] = [
     title: 'Casei Web',
     description: "O 'Casei Web' é um site interativo para casamentos, oferecendo uma lista de presentes com sistema de reserva, funcionalidade de RSVP e um painel administrativo para gerenciamento dos presentes. Os noivos podem compartilhar o site com seus convidados, permitindo que eles deixem mensagens, escolham presentes e confirmem presença no evento. O site também facilita o acesso às localizações da igreja e do salão de festas, proporcionando uma experiência digital completa para a organização do casamento.",
     images: [
-      '/CASEIWEB.png',
-      '/CASEIWEB1.png',
-      '/CASEIWEB2.png',
-      '/CASEIWEB3.png'
+      '/public/Casei WEB.png',
+      
     ],
     category: 'Website',
     link: 'https://hericles-bruna-vao-casar.netlify.app/'
@@ -44,9 +42,8 @@ const projects: Project[] = [
     title: 'Ótica KB',
     description: "A landing page da 'Ótica KB' foi projetada para oferecer uma experiência premium e otimizada para conversões. O site conta com um slider de produtos, formulário de contato, seção de depoimentos e integração direta com o WhatsApp, permitindo que os clientes entrem em contato de forma rápida e prática. O design responsivo garante uma navegação fluida em qualquer dispositivo.",
     images: [
-      '/OTIKAS.png',
-      '/OTIKAS1.png',
-      '/OTIKAS2.png'
+      '/public/Oticas KB.png'
+      
     ],
     category: 'Website',
     link: 'https://oticaskb.com.br/'
@@ -55,9 +52,8 @@ const projects: Project[] = [
     title: 'Quattro Promotora',
     description: "O site da 'Quattro Promotora' foi desenvolvido para oferecer assessoria especializada em consórcios, com atendimento personalizado via WhatsApp. A plataforma proporciona um layout moderno e intuitivo, garantindo fácil acesso às informações sobre os serviços oferecidos. Além disso, conta com páginas bem estruturadas de termos de uso e políticas de privacidade.",
     images: [
-      '/QUATTRO.png',
-      '/QUATTRO1.png',
-      '/QUATTRO2.png'
+      '/public/Quattro.png'
+      
     ],
     category: 'Website',
     link: 'https://quattropromotora-lp.netlify.app/'
@@ -66,10 +62,8 @@ const projects: Project[] = [
     title: 'Vows4Ever - Orçamento de Casamento',
     description: "O 'Vows4Ever' é uma plataforma inovadora para o gerenciamento completo de casamentos, oferecendo diversas funcionalidades para facilitar o planejamento do grande dia. O sistema permite o controle de orçamentos, gerenciamento de fornecedores, calendário de eventos, galeria de inspirações e um sistema de tarefas Kanban. Com gráficos, relatórios financeiros e um painel interativo, o site proporciona uma experiência intuitiva e eficiente para os noivos organizarem todos os detalhes do casamento.",
     images: [
-      '/VOWS4EVER1.png',
-      '/VOWS4EVER2.png',
-      '/VOWS4EVER3.png',
-      '/VOWS4EVER4.png'
+      '/public/vows4ever.png'
+     
     ],
     category: 'Website',
     link: 'https://vows4ever.netlify.app/'
@@ -78,9 +72,8 @@ const projects: Project[] = [
     title: 'Agrocampo',
     description: 'O site "Agro Campo Corrente" é especializado em produtos agropecuários. Eles oferecem uma ampla gama de produtos e serviços destinados ao setor agrícola, incluindo insumos agrícolas, rações, medicamentos veterinários e equipamentos. A empresa parece focada em atender às necessidades dos agricultores e pecuaristas, proporcionando soluções para melhorar a produtividade e eficiência no campo.',
     images: [
-      '/AGROCAMPO1.PNG',
-      '/AGROCAMPO2.PNG',
-      '/AGROCAMPO3.PNG'
+      '/public/AgroCampo.png'
+     
     ],
     category: 'Website',
     link: 'https://agrocampocorrente.com.br/',
@@ -89,9 +82,8 @@ const projects: Project[] = [
     title: 'Portal Piauí +Genética',
     description: 'O site "Piauí +Genética" é uma plataforma relacionada à genética na agropecuária. Ele parece oferecer informações e serviços para melhorar a qualidade genética de rebanhos e plantações através de tecnologia e inovação. Este site pode ser uma ferramenta útil para agricultores e pecuaristas interessados em aumentar a produtividade e a eficiência de suas operações usando métodos genéticos avançados.',
     images: [
-      '/PIAUI1.PNG',
-      '/PIAUI2.PNG',
-      '/PIAUI3.PNG'
+      '/public/Piauí +Genética.png'
+      
     ],
     category: 'Web App',
     link: 'https://maisgenetica.labora-tech.com',
@@ -100,9 +92,8 @@ const projects: Project[] = [
     title: 'Jornal Tribuna - Portal de Notícias',
     description: 'O site "Jornal Tribuna" é um portal de notícias que oferece informações atualizadas e credíveis sobre diversos temas, incluindo política, economia, saúde, educação e mais. O foco do jornal é prover conteúdo informativo e relevante para seus leitores, mantendo-os informados sobre os principais acontecimentos.',
     images: [
-      '/TRIBUNA1.PNG',
-      '/TRIBUNA2.PNG',
-      '/TRIBUNA3.PNG'
+      '/public/Jornal Tribuna.png'
+     
     ],
     category: 'Web App',
     link: 'https://jornaltribuna.net',
