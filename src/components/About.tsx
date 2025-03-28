@@ -34,8 +34,8 @@ export default function About() {
           <div className="relative group">
             <div className="aspect-square rounded-2xl overflow-hidden service-box">
               <img
-                src="/public/Imagem para o site.jpg"
-                alt="Equipe Labora Tech em reunião"
+                src="https://res.cloudinary.com/djykiuic9/image/upload/v1743123418/Imagem_para_o_site_khdfnk.jpg"
+                alt="Labora Tech"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
             </div>
