@@ -68,3 +68,13 @@
 .portfolio-swiper .swiper-pagination-bullet-active {
   @apply bg-white !important;
 }
+
+/* Animação das formas */
+@keyframes heartBeat {
+  0%, 100% {
+    clip-path: circle(40% at 50% 50%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+}

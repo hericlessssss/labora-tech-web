@@ -82,7 +82,7 @@ const projects: Project[] = [
       'https://res.cloudinary.com/djykiuic9/image/upload/v1743123419/Piau%C3%AD_Gen%C3%A9tica_i1iz2f.png'
       
     ],
-    category: 'Web App',
+    category: 'WebApp',
     link: 'https://maisgenetica.labora-tech.com',
   },
   {
@@ -92,7 +92,7 @@ const projects: Project[] = [
       'https://res.cloudinary.com/djykiuic9/image/upload/v1743123419/Jornal_Tribuna_aikshb.png'
      
     ],
-    category: 'Web App',
+    category: 'Website',
     link: 'https://jornaltribuna.net',
   }
 ];
