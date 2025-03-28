@@ -31,20 +31,21 @@ export default function About() {
     <section id="about" className="py-24 bg-base text-white">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative group">
-            <div className="aspect-square rounded-2xl overflow-hidden service-box">
-              <img
-                src="https://res.cloudinary.com/djykiuic9/image/upload/v1743123418/Imagem_para_o_site_khdfnk.jpg"
-                alt="Labora Tech"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl transform transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2">
-              <p className="text-4xl font-bold font-poppins">10+</p>
-              <p className="text-sm opacity-90">Anos de Experiência</p>
-            </div>
+        <div className="relative group">
+          <div className="aspect-square rounded-2xl overflow-hidden service-box">
+            <img
+              src="https://res.cloudinary.com/djykiuic9/image/upload/v1743124145/Imagem_para_o_site_mulpkd.jpg"
+              alt="Equipe Labora Tech em reunião"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ease-in-out"
+            />
           </div>
-
+          
+          <div className="absolute bottom-0 right-0 bg-primary text-white p-6 rounded-xl shadow-lg transform transition-all duration-300 group-hover:translate-x-4 group-hover:translate-y-4 group-hover:scale-105 ease-in-out">
+            <p className="text-4xl font-bold font-poppins">10+</p>
+            <p className="text-sm opacity-90">Anos de Experiência</p>
+          </div>
+        </div>
+        
           <div className="lg:pl-12">
             <h2 className="text-4xl font-bold mb-6 font-poppins text-white">
               Sobre a Labora Tech
