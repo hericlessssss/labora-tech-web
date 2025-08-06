@@ -1,26 +1,9 @@
 import React, { useState } from 'react';
 import LordIcon from './LordIcon';
 import target from '../icons/wired-outline-134-target-hover-dynamic.json';
-import users from '../icons/wired-outline-21-avatar-hover-looking-around.json';
-import award from '../icons/wired-outline-12-layers-hover-squeeze.json';
-import rocket from '../icons/wired-outline-742-code-hover-pinch.json';
+
 
 const stats = [
-  {
-    icon: users,
-    value: '500+',
-    label: 'Clientes Satisfeitos',
-  },
-  {
-    icon: award,
-    value: '50+',
-    label: 'Prêmios Conquistados',
-  },
-  {
-    icon: rocket,
-    value: '1000+',
-    label: 'Projetos Entregues',
-  },
 ];
 
 export default function About() {
@@ -47,14 +30,13 @@ export default function About() {
               Sobre a Labora Tech
             </h2>
             <p className="text-gray-400 mb-6">
-              Desde 2013, a Labora Tech tem sido pioneira em soluções digitais inovadoras, 
-              ajudando empresas a transformarem seus desafios em oportunidades de crescimento. 
-              Nossa missão é impulsionar o sucesso dos nossos clientes através da tecnologia.
+             A Labora Tech nasce com o propósito de transformar desafios em oportunidades por meio de soluções digitais inovadoras. 
+             Nossa missão é impulsionar o crescimento de empresas que acreditam na tecnologia como aliada estratégica para alcançar o sucesso.
             </p>
             <p className="text-gray-400 mb-8">
-              Com uma equipe altamente qualificada e apaixonada por tecnologia, 
-              oferecemos soluções personalizadas que combinam criatividade, 
-              inovação e excelência técnica para entregar resultados excepcionais.
+              Nossa equipe, formada por profissionais qualificados e movidos pela paixão por tecnologia, 
+              desenvolve soluções sob medida que integram criatividade, inovação e rigor técnico para entregar 
+              resultados de alto impacto.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">

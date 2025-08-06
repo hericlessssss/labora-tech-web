@@ -44,51 +44,43 @@ const serviceDetails: Record<string, ServiceDetail> = {
     ],
     plans: [
       {
-        name: 'Básico',
-        price: 2997,
+        name: 'Essencial ',
+        price: 2500,
         features: [
-          'Até 5 páginas',
-          'Design responsivo',
-          'Formulário de contato',
-          'Otimização básica para SEO',
-          'Integração com redes sociais',
-          '3 meses de suporte',
-          'Hospedagem inclusa',
-          'Certificado SSL'
+          'Site institucional com até 4 páginas',
+          'Tema personalizado (layout pré-configurado com ajustes)',
+          '1 rodada de revisão',
+          'Design responsivo (mobile)',
+          'Formulário de contato básico',
         ]
       },
       {
         name: 'Profissional',
-        price: 4997,
+        price: 3500,
         recommended: true,
         features: [
-          'Até 10 páginas',
-          'Design responsivo premium',
-          'Blog integrado',
-          'Otimização avançada para SEO',
-          'Integração com Google Analytics',
-          'Painel administrativo',
-          '6 meses de suporte',
-          'Treinamento da equipe',
-          'Chat online',
-          'Múltiplos idiomas'
+          'Site completo com 8 a 10 páginas responsivas',
+          'Design personalizado',
+          '2 rodadas de revisão',
+          'Treinamento básico para atualização de conteúdo',
+          'Integração com WhatsApp, Google Maps e redes sociais',
+          'Formulário de contato avançado com validação',
+          'Otimização SEO básica (títulos e descrições)',
         ]
       },
       {
-        name: 'Enterprise',
-        price: 7997,
+        name: 'Premium',
+        price: 5500,
         features: [
+          'Design UI exclusivo e totalmente personalizado',
           'Páginas ilimitadas',
-          'Design personalizado exclusivo',
-          'Blog avançado com categorias',
-          'SEO completo',
-          'Integração com CRM',
-          'Painel administrativo customizado',
-          '12 meses de suporte',
-          'Consultoria estratégica',
-          'Hospedagem premium incluída',
-          'Integrações personalizadas',
-          'Área de membros'
+          'Revisões ilimitadas',
+          'Treinamento completo em CMS (WordPress ou outro)',
+          'Integração com ferramentas de marketing (ex: Google Analytics, Pixel do Facebook, etc.)',
+          'Otimização SEO avançada',
+          'Blog configurado',
+          'Área de portfólio, galeria ou projetos',
+          'Segurança com certificado SSL e proteção contra spam',
         ]
       }
     ]
@@ -774,7 +766,7 @@ export default function ServiceDetails() {
                 {details.plans.map((plan, index) => (
                   <div
                     key={index}
-                    className={`service-box flex flex-col min-h-[700px] ${
+                    className={`service-box flex flex-col min-h-[400px] ${
                       plan.recommended ? 'border-primary relative' : ''
                     }`}
                   >

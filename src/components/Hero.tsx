@@ -40,18 +40,13 @@ export default function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <button
-              onClick={() => handleNavigation('/#contact')}
+              onClick={() => handleNavigation('/#services')}
               className="btn-primary flex items-center gap-2"
             >
               Comece agora
               <ArrowRight className="h-4 w-4" />
             </button>
-            <button
-              onClick={() => handleNavigation('/#services')}
-              className="text-sm font-semibold leading-6 text-gray-400 hover:text-primary transition-colors"
-            >
-              Saiba mais <span aria-hidden="true">→</span>
-            </button>
+            
           </div>
         </div>
       </div>
