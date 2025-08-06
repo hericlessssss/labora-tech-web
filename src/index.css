@@ -78,3 +78,37 @@
     clip-path: circle(50% at 50% 50%);
   }
 }
+
+@keyframes enhancedHeartBeat {
+  0%, 100% {
+    clip-path: circle(35% at 50% 50%);
+    transform: translate(-50%, -50%) scale(1) rotate(30deg);
+  }
+  25% {
+    clip-path: circle(45% at 50% 50%);
+    transform: translate(-50%, -50%) scale(1.05) rotate(32deg);
+  }
+  50% {
+    clip-path: circle(55% at 50% 50%);
+    transform: translate(-50%, -50%) scale(1.1) rotate(35deg);
+  }
+  75% {
+    clip-path: circle(45% at 50% 50%);
+    transform: translate(-50%, -50%) scale(1.05) rotate(32deg);
+  }
+}
+
+@keyframes movingBackground {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+  25% {
+    transform: translate(-45%, -55%) rotate(45deg);
+  }
+  50% {
+    transform: translate(-55%, -45%) rotate(60deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(75deg);
+  }
+}

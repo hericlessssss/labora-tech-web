@@ -1,9 +1,9 @@
 import React from 'react';
 import { Code2, Instagram, Facebook, Linkedin, Twitter, Heart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const quickLinks = [
-  { name: 'Início', href: '/' },
+  { name: 'Início', href: '/#hero' },
   { name: 'Sobre Nós', href: '/#about' },
   { name: 'Serviços', href: '/#services' },
   { name: 'Portfólio', href: '/#portfolio' },
@@ -14,9 +14,7 @@ const quickLinks = [
 const services = [
   { name: 'Desenvolvimento Web', href: '/servicos/websites' },
   { name: 'E-commerce', href: '/servicos/ecommerce' },
-  { name: 'Marketing Digital', href: '/servicos/marketing' },
-  { name: 'Design UX/UI', href: '/servicos/design' },
-  { name: 'SEO', href: '/servicos/seo' },
+  { name: 'Aplicações Web', href: '/servicos/webapps' },
   { name: 'Consultoria', href: '/servicos/consulting' },
 ];
 
@@ -28,6 +26,36 @@ const legal = [
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+
+  const handleLinkClick = (href: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    if (href.startsWith('/#')) {
+      // Se estamos em uma página diferente da home, navegar para home primeiro
+      if (window.location.pathname !== '/') {
+        navigate('/');
+        // Aguardar um momento para a página carregar antes de fazer scroll
+        setTimeout(() => {
+          const sectionId = href.substring(2); // Remove '/#'
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        // Se já estamos na home, fazer scroll direto
+        const sectionId = href.substring(2); // Remove '/#'
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      // Para links normais, usar navegação padrão
+      navigate(href);
+    }
+  };
 
   return (
     <footer className="bg-base text-white">
@@ -99,12 +127,13 @@ export default function Footer() {
             <ul className="space-y-4">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-gray-400 hover:text-primary transition-colors"
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleLinkClick(link.href, e)}
+                    className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

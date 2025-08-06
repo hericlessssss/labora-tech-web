@@ -15,7 +15,7 @@ export const services = [
   {
     id: 'websites',
     icon: website,
-    title: 'Design e Desenvolvimento de Websites',
+    title: 'Design de Websites',
     description: 'Criação de websites excepcionais que convertem visitantes em clientes, com foco em design moderno e experiência do usuário.',
   },
   {
@@ -29,36 +29,6 @@ export const services = [
     icon: webapp,
     title: 'Aplicações Web',
     description: 'Desenvolvimento de aplicações web robustas e escaláveis, adaptadas às necessidades específicas do seu negócio.',
-  },
-  {
-    id: 'seo',
-    icon: seo,
-    title: 'SEO',
-    description: 'Otimização para mecanismos de busca para melhorar o ranking do seu site e aumentar a visibilidade online.',
-  },
-  {
-    id: 'marketing',
-    icon: marketing,
-    title: 'Marketing Digital',
-    description: 'Estratégias completas de marketing digital para aumentar sua presença online e gerar mais leads.',
-  },
-  {
-    id: 'social',
-    icon: social,
-    title: 'Marketing em Mídias Sociais',
-    description: 'Gestão profissional de redes sociais para conectar sua marca com seu público-alvo.',
-  },
-  {
-    id: 'design',
-    icon: design,
-    title: 'UX/UI Design',
-    description: 'Design de interfaces intuitivas e atraentes que fortalecem sua marca e melhoram a experiência do usuário.',
-  },
-  {
-    id: 'support',
-    icon: support,
-    title: 'Assistência Técnica',
-    description: 'Suporte técnico especializado para computadores e notebooks, mantendo seu negócio funcionando.',
   },
   {
     id: 'consulting',

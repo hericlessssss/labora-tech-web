@@ -26,24 +26,20 @@ const stats = [
 export default function About() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [hoveredMission, setHoveredMission] = useState(false);
+  const [hoveredImage, setHoveredImage] = useState(false);
 
   return (
     <section id="about" className="py-24 bg-base text-white">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="relative group">
-          <div className="aspect-square rounded-2xl overflow-hidden service-box">
-            <img
-              src="https://res.cloudinary.com/djykiuic9/image/upload/v1743124145/Imagem_para_o_site_mulpkd.jpg"
-              alt="Equipe Labora Tech em reunião"
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ease-in-out"
-            />
-          </div>
-          
-          <div className="absolute bottom-0 right-0 bg-primary text-white p-6 rounded-xl shadow-lg transform transition-all duration-300 group-hover:translate-x-4 group-hover:translate-y-4 group-hover:scale-105 ease-in-out">
-            <p className="text-4xl font-bold font-poppins">10+</p>
-            <p className="text-sm opacity-90">Anos de Experiência</p>
-          </div>
+          <img
+            src="/Imagem para o site.jpg"
+            alt="Equipe Labora Tech em reunião"
+            className="w-full h-full aspect-square rounded-2xl object-cover transition-all duration-300 group-hover:scale-105 ease-in-out border-2 border-transparent hover:border-primary"
+            onMouseEnter={() => setHoveredImage(true)}
+            onMouseLeave={() => setHoveredImage(false)}
+          />
         </div>
         
           <div className="lg:pl-12">

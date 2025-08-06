@@ -21,9 +21,9 @@ export default function Hero() {
     <div id="hero" className="relative isolate pt-24 bg-base text-white">
      <div className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl ">
         <div
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] rotate-[30deg] bg-gradient-to-tr from-primary to-tertiary opacity-20 blur-3xl"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] rotate-[30deg] bg-gradient-to-tr from-primary to-tertiary opacity-25 blur-3xl"
           style={{
-            animation: 'movingBackground 50s ease-in-out infinite, heartBeat 3s ease-in-out infinite',
+            animation: 'movingBackground 40s ease-in-out infinite, enhancedHeartBeat 4s ease-in-out infinite',
             clipPath: 'circle(0% at 50% 50%)',
           }}
         />
